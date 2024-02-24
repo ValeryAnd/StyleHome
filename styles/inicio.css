@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+header{
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDEEF0;
+    z-index: 10000;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.menu ul li a:hover {
+    color: #9198A2;
+}
+
+.menu .logo, footer .logo{
+    font-size: 30px;
+    padding-right: 100px;
+}
+
+.menu .logo a:hover, footer .logo{
+    color: black;
+}
+
+#hero{
+    width: 100%;
+    height: 800px;
+    background-color: #EDEEF0;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    
+}
+
+#hero .hero-image{
+    margin-left: 60%;
+}
+
+#hero .hero-text{
+    position:absolute;
+    left: 0;
+    padding: 0px 250px;
+}
+
+#hero .hero-text h1{
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#hero .hero-text p {
+    width: 50%;
+    text-align: justify;
+    padding-left: 10px;
+    line-height: 30px;
+
+}
+
+.hero-image h2{
+    margin-top: 50px;
+    font-size: 90px;
+    font-weight: 500;
+    color: #848893;
+}
+
+#productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product {
+    width: 60%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#productos h3{
+    margin-top: 50px;
+    color: #759AA2 ;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+#productos .container-productos{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.product img {
+    max-width: 100%;
+    height: 300px; 
+}
+
+.container-productos .product{
+    width: 20%;
+}
+
+#nuevaColeccion{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    margin:100px 0px
+}
+
+#nuevaColeccion .contenedor-imagen,
+#nuevaColeccion .contenedor-texto{
+    width: 50%;
+} 
+
+#nuevaColeccion .contenedor-imagen img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#nuevaColeccion .contenedor-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 120px;
+    line-height: 40px;
+}
+
+#nuevaColeccion .contenedor-imagen{
+    text-align: left;
+}
+
+#nuevaColeccion .contenedor-texto h2{
+    font-size: 14px;
+    color: #848893;
+    font-weight: 400;
+}
+
+#nuevaColeccion .contenedor-texto h3{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+
+#galeria{
+    text-align: center;
+}
+
+#galeria h4{
+    margin: 30px 0px;
+    font-size: 30px;
+    color: #759AA2;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#galeria .contenedor-imagenes img{
+    width: 300px;
+    height: 350px;
+}
+
+#escogernos .escogernos-container{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+
+#escogernos h2{
+    text-align: center;
+    margin: 40px 0px;
+}
+
+#escogernos .escogernos-puntos,
+#escogernos .escogernos-img{
+    width: 50%;
+}
+
+#escogernos .escogernos-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#escogernos .escogernos-puntos{
+    padding: 0px 50px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+#escogernos .escogernos-puntos h5{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+footer{
+    background-color: #EDEEF0;
+    text-align: center;
+}
+
+footer .footer-container{
+    padding: 30px;
+}
+footer ul{
+    display: flex;
+    text-align: center;
+    margin:20px;
+}
+
+footer ul li{
+    padding: 0 20px;
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-container .logo{
+    margin-top: 20px;
+}
