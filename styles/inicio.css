@@ -9,12 +9,8 @@ header{
     position: fixed;
     height: 75px;
     width: 100%;
-    z-index: 11000;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     background-color: #EDEEF0;
+    margin-bottom: 100px;
 }
 
 header ul {
@@ -50,22 +46,23 @@ header ul {
 
 #hero{
     width: 100%;
-    height: 760px;
+    padding-top: 100px;
     background-color: #EDEEF0;
-    display: flex;
-    flex-direction: column ;
-    justify-content: center;
-    
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center; 
 }
 
 #hero .hero-image{
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-#hero .hero-text{
-    position:absolute;
-    left: 0;
-    padding: 0px 250px;
+#hero .hero-image img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #hero .hero-text h1{
@@ -75,14 +72,12 @@ header ul {
 }
 
 #hero .hero-text p {
-    width: 50%;
     text-align: justify;
-    padding-left: 10px;
     line-height: 30px;
 
 }
 
-.hero-image h2{
+#hero .hero-text h2{
     margin-top: 50px;
     font-size: 90px;
     font-weight: 500;
@@ -95,11 +90,12 @@ header ul {
 
 #productos h3{
     margin-top: 50px;
-    color: #759AA2 ;
+    color: #4A525D ;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 32px;
+    letter-spacing: 2px;
 }
 
 #productos .container-productos {
@@ -123,7 +119,8 @@ header ul {
 
 #nuevaColeccion{
     width: 70%;
-    margin: 120px auto;
+    margin: 0 auto;
+    margin-top:150px;
     display: flex;
     flex-direction: row;
 }
@@ -139,7 +136,7 @@ header ul {
     flex-direction: column;
     justify-content: center;
     line-height: 40px;
-    padding: 0px 80px;
+    padding-left: 80px;
 }
 
 #nuevaColeccion .contenedor-imagen{
@@ -164,9 +161,9 @@ header ul {
 }
 
 #galeria h4{
-    margin: 30px 0px;
+    margin:80px 0px;
     font-size: 30px;
-    color: #759AA2;
+    color: #4A525D;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
@@ -191,38 +188,69 @@ header ul {
 }
 
 #escogernos .escogernos-container{
-    display: flex;
-    flex-direction: row;
-    height: 500px;
+    display: grid;
+    grid-template-columns: 60% 40%;
 }
 
 #escogernos h2{
+    font-size: 32px;
     text-align: center;
-    margin: 40px 0px;
+    margin: 80px 0px;
+    letter-spacing: 2px;
+    color: #4A525D;
 }
 
-#escogernos .escogernos-puntos,
-#escogernos .escogernos-img{
-    width: 50%;
+#escogernos .escogernos-puntos{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px;
+    align-content: center;
+    gap: 40px;
+    margin: 0 auto;
+    line-height: 30px;
+    font-size: 16px;
+
+}
+
+#escogernos .escogernos-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #escogernos .escogernos-img img{
     height: 100%;
-    width: 100%;
+    width: 80%;
     object-fit: cover;
 }
 
-#escogernos .escogernos-puntos{
-    padding: 0px 50px;
-    line-height: 30px;
-    font-size: 14px;
+#escogernos .escogernos-puntos .escogernos-pts{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 30px;
+}
+
+#escogernos .punto-circular{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #BBCEDD;
+}
+
+#escogernos .escogernos-puntos h4 {
+    font-size: 28px;
+    padding: 15px 0;
 }
 
 #escogernos .escogernos-puntos h5{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
+    padding: 20px 0;
 }
-
+/*
 footer{
     background-color: #EDEEF0;
     text-align: center;
@@ -250,3 +278,4 @@ footer ul li a{
 .footer-container .logo{
     margin-top: 20px;
 }
+*/
