@@ -6,15 +6,11 @@
 }
 
 header{
+    position: fixed;
     height: 75px;
     width: 100%;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     background-color: #EDEEF0;
-    z-index: 10000;
+    margin-bottom: 100px;
 }
 
 header ul {
@@ -26,7 +22,7 @@ header ul {
 
 .menu ul li {
     list-style: none;
-    padding: 15px;
+    padding: 15px 40px;
 }
 
 .menu ul li a {
@@ -36,7 +32,7 @@ header ul {
 }
 
 .menu ul li a:hover {
-    color: #9198A2;
+    color: #7b9fbb;
 }
 
 .menu .logo, footer .logo{
@@ -46,10 +42,6 @@ header ul {
 
 .menu .logo a:hover, footer .logo{
     color: black;
-}
-
-#contact {
-    padding-top: 75px;
 }
 
 #hero{
@@ -84,23 +76,85 @@ header ul {
 }
 
 #hero .hero-text p {
+    margin-top: 30px;
     text-align: justify;
     line-height: 40px;
-
 }
 
-form{
+.suscribete {
+    display: grid;
+    place-items: center;
+}
+
+#contact .suscribete h2, #contact .informacion h3{
+    margin: 30px 0;
+    font-size: 32px;
+    font-weight: 600;
+    color: #4A525D;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+#contact form{
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
+    grid-column-gap: 50px;
 }
 
-form label{
+#contact form label{
     display: block;
 }
 
-form input{
+#contact form input{
     width: 100%;
+}
+
+#contact .button-contact{
+    margin: 30px 0px;
+    padding: 18px 70px;
+    border: none;
+    background-color: #7b9fbb;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s;
+}
+
+#contact .button-contact:hover{
+    background-color: #93bbda;
+}
+
+#contact .informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .informacion .container-informacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .container-informacion .container-text {
+    width: 80%;
+    height: 100%;
+    margin: 0px 30px;
+    padding: 15px 45px;
+    border: 3px solid #9198A2;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#contact .container-informacion .container-text h4{
+    font-size: 16px;
+}
+
+#contact .informacion .informacion-ubicacion {
+    margin: 40px 0px;
 }
 
 #footer{
@@ -168,13 +222,4 @@ form input{
     padding: 20px 0px;
 }
 
-.button-contact{
-    padding: 20px 50px;
-    border: none;
-    background-color: #9198A2;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
-}
 

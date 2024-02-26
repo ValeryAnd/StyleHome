@@ -6,15 +6,11 @@
 }
 
 header{
+    position: fixed;
     height: 75px;
     width: 100%;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     background-color: #EDEEF0;
-    z-index: 10000;
+    margin-bottom: 100px;
 }
 
 header ul {
@@ -26,7 +22,7 @@ header ul {
 
 .menu ul li {
     list-style: none;
-    padding: 15px;
+    padding: 15px 40px;
 }
 
 .menu ul li a {
@@ -36,7 +32,7 @@ header ul {
 }
 
 .menu ul li a:hover {
-    color: #9198A2;
+    color: #7b9fbb;
 }
 
 .menu .logo, footer .logo{
@@ -51,34 +47,42 @@ header ul {
 #about-us {
     padding-top: 75px;
 }
+
 #hero{
     width: 100%;
-    height: 800px;
     background-color: #EDEEF0;
-    display: flex;
-    flex-direction: column ;
-    justify-content: center;
-    
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center; 
 }
 
 #hero .hero-image{
-    margin-left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hero .hero-image img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #hero .hero-text{
-    position:absolute;
-    right: 0;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #hero .hero-text h1{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 #hero .hero-text p {
-    width: 40%;
+    margin-top: 30px;
     text-align: justify;
+    line-height: 40px;
 }
 
 footer{

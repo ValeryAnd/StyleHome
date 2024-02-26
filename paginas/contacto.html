@@ -47,53 +47,50 @@
                     <p>Suscribete para que puedas obtener 20% de descuento en tu primera ompra mas el envio gratis a cualquier parte del mundo</p>   
                 </div>
             </section>
-            <h2>Suscribete</h2>
-            <!-- <form action="">
-                <div>
-                    <label for="nombres"">Nombres:</label>
-                    <input type="text" name="nombres">
-                </div>
-                <div>
-                    <label for="apellidos">Apellidos</label>
-                    <input type="text" name="apellidos">
-                </div>
-                <div>
-                    <label for="numero">Número:</label>
-                    <input type="text" name="numero">
-                </div>
-                <div>
-                    <label for="email">Correo Electronico</label>
-                    <input type="email" name="email">
-                </div>
-                <div>
-                    <label for="comentario">Comentario</label>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-                </div>
-            </form>
-            <button type="submit" class="button-contact">Enviar</button> -->
-            <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">Example label</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-            </div>
-            <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Another label</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-            </div>
-            <section>
+            <section class="suscribete">
+                <h2>Suscribete</h2>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="nombres" class="form-label">Nombres:</label>
+                        <input type="text" class="form-control" id="nombres" placeholder="Nombres completos">
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellidos" class="form-label">Apellidos:</label>
+                        <input type="text" class="form-control" id="apellidos" placeholder="Apellidos paternos y maternos ">
+                    </div>
+                    <div class="mb-3">
+                        <label for="numero" class="form-label">Número:</label>
+                        <input type="text" class="form-control" id="numero" placeholder="999-999-999">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico:</label>
+                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="comentario" class="form-label">Comentario:</label>
+                        <textarea class="form-control" id="comentario" placeholder="Escribe un comentario" cols="20" rows="5"></textarea>
+                    </div>
+                </form>
+                <button type="submit" class="button-contact">Enviar</button>
+            </section>
+            
+            <section class="informacion">
                 <h3>Encuentranos</h3>
-                <div>
-                    <h4>Celular:</h4>
-                    <p>988-888-888</p>
+                <div class="container-informacion">
+                    <div class="container-text">
+                        <h4>Celular:</h4>
+                        <p>988-888-888</p>
+                    </div>
+                    <div class="container-text">
+                        <h4>Correo electronico:</h4>
+                        <p>stylehome@gmail.com</p>
+                    </div>
+                    <div class="container-text">
+                        <h4>Ubicación:</h4>
+                        <p>Surco Calle Pinos #45</p>
+                    </div>
                 </div>
-                <div>
-                    <h4>Correo electronico:</h4>
-                    <p>stylehome@gmail.com</p>
-                </div>
-                <div>
-                    <h4>Ubicación</h4>
-                    <p>Surco Calle Pinos #45</p>
-                </div>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1dIvoW5-Ut0i2Ok4_CYiVou2quow&hl=en_US&ehbc=2E312F" width="640" height="480"></iframe>
+                <iframe  class="informacion-ubicacion" src="https://www.google.com/maps/d/embed?mid=1dIvoW5-Ut0i2Ok4_CYiVou2quow&hl=en_US&ehbc=2E312F" width="640" height="480"></iframe>  
             </section>
         </section>
     </main>
