@@ -85,44 +85,183 @@ header ul {
     line-height: 40px;
 }
 
-footer{
-    background-color: #EDEEF0;
+#hero .hero-text .hero-button {
+    margin-top: 30px;
+    width: 200px;
+    padding: 15px 55px;
     text-align: center;
+    background-color: #848893;
+    border-radius: 40px;
+
 }
 
-footer .footer-container{
-    padding: 30px;
-}
-footer ul{
-    display: flex;
-    text-align: center;
-    margin:20px;
-}
-
-footer ul li{
-    padding: 0 20px;
-    list-style: none;
-}
-
-footer ul li a{
+#hero .hero-text .hero-button a{
     text-decoration: none;
-    color: black;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s;
 }
 
-.footer-container .logo{
-    margin-top: 20px;
-}
-
-#contact h2{
-    font-size: 25px;
-    text-align: center;
-    padding: 20px 0px;
-}
-
-.empresarios img{
-    width: 20%;
+#hero .hero-text .hero-button:hover{
+    cursor: pointer;
+    background-color: #537792;
 }
 
 #texts {
+    width: 80%;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 100px;
+}
+
+#texts .container-texts {
+    line-height: 35px;
+}
+
+#texts .container-texts h2{
+    color: #4A525D;
+    margin-bottom: 20px;
+}
+
+#texts .container-texts p{
+    text-align: justify;
+}
+
+#fundadores {
+    margin: 90px 0;
+}
+
+#fundadores .container-fundadores {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap: 80px;
+}
+
+#fundadores h3{
+    margin: 40px 0;
     text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #4A525D;
+}
+
+#fundadores .fundadores {
+    background-color: #7b9fbb;
+    width: 120%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#fundadores .fundadores img{
+    width: 80%;
+    height:70%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#fundadores .fundadores p{
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+#nuestraHistoria{
+    width: 70%;
+    margin: 0 auto;
+    margin-top:150px;
+    display: flex;
+    flex-direction: row;
+}
+
+#nuestraHistoria .contenedor-imagen img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#nuestraHistoria .contenedor-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 40px;
+    padding-left: 80px;
+}
+
+#nuestraHistoria .contenedor-imagen{
+    text-align: left;
+}
+
+#nuestraHistoria .contenedor-texto h3{
+    font-size: 32px;
+    color: black;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+#footer{
+    background-color: #EDEEF0;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 100px;   
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .footer-nav {
+    margin-top: 100px;
+}
+
+#footer .footer-nav .logo{
+    text-decoration: none;
+    font-weight: 500;
+}
+#footer .footer-nav ul{
+    display: flex;
+    text-align: center;
+}
+
+#footer ul li{
+    padding: 0 30px;
+    list-style: none;
+}
+
+#footer ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+#footer .footer-nav a:hover{
+    color: #7b9fbb;
+}
+
+#footer .footer-nav .logo:hover {
+    color: black;
+}
+
+#footer .footer-texts {
+    margin-top: 60px;
+}
+
+#footer .footer-texts ul .text-weight{
+    font-weight: 600;
+}
+
+#footer .footer-texts ul li{
+    padding: 10px 0;
+}
+
+#footer .footer-texts p {
+    margin: 30px 0px;
+    font-weight: 500;
+    font-size: 16px;
 }
