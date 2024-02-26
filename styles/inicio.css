@@ -22,7 +22,7 @@ header ul {
 
 .menu ul li {
     list-style: none;
-    padding: 15px;
+    padding: 15px 40px;
 }
 
 .menu ul li a {
@@ -32,7 +32,7 @@ header ul {
 }
 
 .menu ul li a:hover {
-    color: #9198A2;
+    color: #7b9fbb;
 }
 
 .menu .logo, footer .logo{
@@ -65,6 +65,11 @@ header ul {
     object-fit: cover;
 }
 
+#hero .hero-text{
+    width: 60%;
+    margin: 0 auto;
+}
+
 #hero .hero-text h1{
     font-size: 70px;
     font-weight: 700;
@@ -72,8 +77,9 @@ header ul {
 }
 
 #hero .hero-text p {
+    padding-top: 40px;
     text-align: justify;
-    line-height: 30px;
+    line-height: 40px;
 
 }
 
@@ -98,6 +104,16 @@ header ul {
     letter-spacing: 2px;
 }
 
+#productos .productos-arrow{
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    align-items: center;
+}
+
+#productos .productos-arrow .icons{
+    margin: 0 auto;
+}
+
 #productos .container-productos {
     width: 90%;
     margin: 50px auto;
@@ -114,7 +130,26 @@ header ul {
 }
 
 #productos .product h4{
+    font-size: 16px;
+    font-weight: 600;
     padding-top: 20px;
+}
+
+#productos .icons {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #CCCDCE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+#productos .icons:hover {
+    cursor: pointer;
+    background-color: #a2bbce;
 }
 
 #nuevaColeccion{
@@ -163,6 +198,7 @@ header ul {
 #galeria h4{
     margin:80px 0px;
     font-size: 30px;
+    font-weight: 600;
     color: #4A525D;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -186,7 +222,9 @@ header ul {
 #galeria .galeria-imagenes .galeria-img:nth-child(1){
     grid-row-start: span 2;
 }
-
+#escogernos {
+    margin-bottom: 80px;
+}
 #escogernos .escogernos-container{
     display: grid;
     grid-template-columns: 60% 40%;
@@ -229,53 +267,84 @@ header ul {
 #escogernos .escogernos-puntos .escogernos-pts{
     display: grid;
     grid-template-columns: 25% 75%;
-    gap: 30px;
+    gap: 20px;
 }
 
 #escogernos .punto-circular{
     width: 70px;
     height: 70px;
-    position: relative;
     border-radius: 50%;
     background-color: #BBCEDD;
 }
 
 #escogernos .escogernos-puntos h4 {
-    font-size: 28px;
-    padding: 15px 0;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 10px 0;
 }
 
 #escogernos .escogernos-puntos h5{
     font-size: 16px;
     font-weight: 600;
-    padding: 20px 0;
+    padding: 10px 0;
 }
-/*
-footer{
+
+#footer{
     background-color: #EDEEF0;
     text-align: center;
+    display: grid;
+    grid-template-rows: 100px;   
+    justify-content: center;
+    align-items: center;
 }
 
-footer .footer-container{
-    padding: 30px;
+#footer .footer-nav {
+    margin-top: 100px;
 }
-footer ul{
+
+#footer .footer-nav .logo{
+    text-decoration: none;
+    font-weight: 500;
+}
+#footer .footer-nav ul{
     display: flex;
     text-align: center;
-    margin:20px;
 }
 
-footer ul li{
-    padding: 0 20px;
+#footer ul li{
+    padding: 0 30px;
     list-style: none;
 }
 
-footer ul li a{
+#footer ul li a{
     text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+#footer .footer-nav a:hover{
+    color: #7b9fbb;
+}
+
+#footer .footer-nav .logo:hover {
     color: black;
 }
 
-.footer-container .logo{
-    margin-top: 20px;
+#footer .footer-texts {
+    margin-top: 60px;
 }
-*/
+
+#footer .footer-texts ul .text-weight{
+    font-weight: 600;
+}
+
+#footer .footer-texts ul li{
+    padding: 10px 0;
+}
+
+#footer .footer-texts p {
+    margin: 30px 0px;
+    font-weight: 500;
+    font-size: 16px;
+}
+

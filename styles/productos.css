@@ -6,15 +6,11 @@
 }
 
 header{
+    position: fixed;
     height: 75px;
     width: 100%;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     background-color: #EDEEF0;
-    z-index: 10000;
+    margin-bottom: 100px;
 }
 
 header ul {
@@ -26,7 +22,7 @@ header ul {
 
 .menu ul li {
     list-style: none;
-    padding: 15px;
+    padding: 15px 40px;
 }
 
 .menu ul li a {
@@ -36,7 +32,7 @@ header ul {
 }
 
 .menu ul li a:hover {
-    color: #9198A2;
+    color: #7b9fbb;
 }
 
 .menu .logo, footer .logo{
@@ -47,61 +43,123 @@ header ul {
 .menu .logo a:hover, footer .logo{
     color: black;
 }
+
 #productos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 100px;
+    padding: 120px 0px;
 }
 
-.product {
-    width: 60%;
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 0px 20px;
+#productos .productos-texts {
+    margin-left: 120px;
+}
+
+#productos .productos-texts h1{
+    font-size: 12px;
+    font-weight: 400;
+    padding: 20px 0px;
+    transition: all 0.3s;
+}
+
+#productos .productos-texts h1:hover {
+    color: #7b9fbb;
+    cursor: pointer;
+}
+
+#productos .productos-texts h2{
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 #productos .container-productos{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 80px;
+    grid-column-gap: 20px;
+    margin-top: 50px;  
 }
 
-.product img {
+#productos .container-productos .product {
+    max-width: 80%;
+    height: 100%;
+    text-align: left;
+}
+
+#productos .container-productos .product img {
     max-width: 100%;
-    height: 300px; 
+    height: 80%; 
+    object-fit: cover;
 }
 
-#productos h1{
-    font-size: 12px;
-    font-weight: 400;
+#productos .container-productos .product-img:hover{
+    cursor: pointer;
 }
 
-footer{
+#productos .container-productos .product-texts{
+    padding: 20px 0px;
+    font-size: 16px;
+}
+
+#productos .container-productos .product-texts p{
+    padding: 10px 0px;
+    font-size: 15px;
+}
+
+#footer{
     background-color: #EDEEF0;
     text-align: center;
+    display: grid;
+    grid-template-rows: 100px;   
+    justify-content: center;
+    align-items: center;
 }
 
-footer .footer-container{
-    padding: 30px;
+#footer .footer-nav {
+    margin-top: 100px;
 }
-footer ul{
+
+#footer .footer-nav .logo{
+    text-decoration: none;
+    font-weight: 500;
+}
+#footer .footer-nav ul{
     display: flex;
     text-align: center;
-    margin:20px;
 }
 
-footer ul li{
-    padding: 0 20px;
+#footer ul li{
+    padding: 0 30px;
     list-style: none;
 }
 
-footer ul li a{
+#footer ul li a{
     text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+#footer .footer-nav a:hover{
+    color: #7b9fbb;
+}
+
+#footer .footer-nav .logo:hover {
     color: black;
 }
 
-.footer-container .logo{
-    margin-top: 20px;
+#footer .footer-texts {
+    margin-top: 60px;
+}
+
+#footer .footer-texts ul .text-weight{
+    font-weight: 600;
+}
+
+#footer .footer-texts ul li{
+    padding: 10px 0;
+}
+
+#footer .footer-texts p {
+    margin: 30px 0px;
+    font-weight: 500;
+    font-size: 16px;
 }

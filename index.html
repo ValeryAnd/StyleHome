@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f75b12fb93.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/inicio.css">
     <title>STYLEHOME</title>
@@ -41,7 +42,7 @@
         <section id="hero">
             <div class="hero-text">
                 <h2>01</h2>
-                <h1>Moderno .</h1>
+                <h1>Moderno.</h1>
                 <p>Explora nuestra colección de muebles y accesorios de diseño moderno. Eleva tu hogar con líneas limpias y contemporáneas.</p>
             </div>
             <div class="hero-image">
@@ -50,32 +51,41 @@
         </section>
         <section id="productos">
             <h3>Lo esencial para tu hogar</h3>
-            <div class="container-productos">
-                <div class="product">
-                    <a href="./paginas/productos.html" class="product-img">
-                        <img src="./imagenes/sillon.jpg" alt="Sillon">
-                    </a>
-                    <h4>Sillones</h4>
+            <div class="productos-arrow">
+                <div class="icons">
+                    <i class="fa-solid fa-arrow-right icon-style"></i>
                 </div>
-                <div class="product">
-                    <a href="./paginas/productos.html"  class="product-img">
-                        <img src="./imagenes/plantas.jpg" alt="Plantas">
-                    </a>
-                    <h4>Plantas y macetas</h4>
+                <div class="container-productos">
+                    <div class="product">
+                        <a href="./paginas/productos.html" class="product-img">
+                            <img src="./imagenes/sillon.jpg" alt="Sillon">
+                        </a>
+                        <h4>Sillones</h4>
+                    </div>
+                    <div class="product">
+                        <a href="./paginas/productos.html"  class="product-img">
+                            <img src="./imagenes/plantas.jpg" alt="Plantas">
+                        </a>
+                        <h4>Plantas y macetas</h4>
+                    </div>
+                    <div class="product">
+                        <a href="./paginas/productos.html" class="product-img">
+                            <img src="./imagenes/alfombras.jpg" alt="Alfombra">
+                        </a>
+                        <h4>Alfombras</h4>
+                    </div>
+                    <div class="product">
+                        <a href="./paginas/productos.html" class="product-img">
+                            <img src="./imagenes/menajes.jpg" alt="Menajes">
+                        </a>
+                        <h4>Menaje</h4>
+                    </div>
                 </div>
-                <div class="product">
-                    <a href="./paginas/productos.html" class="product-img">
-                        <img src="./imagenes/alfombras.jpg" alt="Alfombra">
-                    </a>
-                    <h4>Alfombras</h4>
-                </div>
-                <div class="product">
-                    <a href="./paginas/productos.html" class="product-img">
-                        <img src="./imagenes/menajes.jpg" alt="Menajes">
-                    </a>
-                    <h4>Menaje</h4>
+                <div class="icons">
+                    <i class="fa-solid fa-arrow-right icon-style"></i>
                 </div>
             </div>
+            
         </section>
         <section id="nuevaColeccion">
             <div class="contenedor-imagen">
@@ -164,26 +174,28 @@
     </main>
 
     <footer>
-        <div class="footer-container">
-            <a href="" class="logo">STYLEHOME</a>
-            <ul>
-                <li><a href="#">Preguntas frecuentes</a></li>
-                <li><a href="#">Politicas de envio</a></li>
-                <li><a href="#">Politicas de envios y devoluciones</a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>Contactanos</li>
-                <li>Cel: 988 888 888</li>
-                <li>Correo: stylehome@gmail.com</li>
-                <li>Encuéntranos: Surco (previa coordinación)</li>
-            </ul>
-            <p>© 2024 por STYLEHOME - Todos los derechos reservados</p>
-        </div>
+        <section id="footer">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#" class="logo">STYLEHOME</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Politicas de envio</a></li>
+                    <li><a href="#">Politicas de envios y devoluciones</a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                    <li><a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fa-brands fa-square-facebook fa-2xl"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=es"><i class="fa-brands fa-square-twitter fa-2xl"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-texts">
+                <ul>
+                    <li class="text-weight">Contactanos</li>
+                    <li>Cel: 988 888 888</li>
+                    <li>Correo: stylehome@gmail.com</li>
+                    <li>Encuéntranos: Surco (previa coordinación)</li>
+                </ul>
+                <p>© 2024 por STYLEHOME - Todos los derechos reservados</p>
+            </div>
+        </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

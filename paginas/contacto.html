@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f75b12fb93.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/contacto.css">
     <title>STYLEHOME</title>
 </head>
@@ -42,30 +44,41 @@
                 </div>
                 <div class="hero-text">
                     <h1>Contact us</h1>
-                    <p>Suscribete para que puedas obtener 20% de descuento en tu primera ompra mas el envio gratis a cualquier parte del mundo</p>
-                    
+                    <p>Suscribete para que puedas obtener 20% de descuento en tu primera ompra mas el envio gratis a cualquier parte del mundo</p>   
                 </div>
             </section>
             <h2>Suscribete</h2>
-            <form action="">
-
-                <label for="nombres"">Nombres:</label>
-                <input type="text" name="nombres">
-
-                <label for="apellidos">Apellidos</label>
-                <input type="text" name="apellidos">
-
-                <label for="numero">Número:</label>
-                <input type="text" name="numero">
-
-                <label for="email">Correo Electronico</label>
-                <input type="email" name="email">
-
-                <label for="comentario">Comentario</label>
-                <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-                <br>
-                <button type="submit" class="button-contact">Enviar</button>
+            <!-- <form action="">
+                <div>
+                    <label for="nombres"">Nombres:</label>
+                    <input type="text" name="nombres">
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos">
+                </div>
+                <div>
+                    <label for="numero">Número:</label>
+                    <input type="text" name="numero">
+                </div>
+                <div>
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <label for="comentario">Comentario</label>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                </div>
             </form>
+            <button type="submit" class="button-contact">Enviar</button> -->
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Example label</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Another label</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+            </div>
             <section>
                 <h3>Encuentranos</h3>
                 <div>
@@ -85,26 +98,29 @@
         </section>
     </main>
     <footer>
-        <div class="footer-container">
-            <a href="" class="logo">STYLEHOME</a>
-            <ul>
-                <li><a href="#">Preguntas frecuentes</a></li>
-                <li><a href="#">Politicas de envio</a></li>
-                <li><a href="#">Politicas de envios y devoluciones</a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>Contactanos</li>
-                <li>Cel: 988 888 888</li>
-                <li>Correo: stylehome@gmail.com</li>
-                <li>Encuéntranos: Surco (previa coordinación)</li>
-            </ul>
-            <p>© 2024 por STYLEHOME - Todos los derechos reservados</p>
-        </div>
+        <section id="footer">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#" class="logo">STYLEHOME</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Politicas de envio</a></li>
+                    <li><a href="#">Politicas de envios y devoluciones</a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                    <li><a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fa-brands fa-square-facebook fa-2xl"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=es"><i class="fa-brands fa-square-twitter fa-2xl"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-texts">
+                <ul>
+                    <li class="text-weight">Contactanos</li>
+                    <li>Cel: 988 888 888</li>
+                    <li>Correo: stylehome@gmail.com</li>
+                    <li>Encuéntranos: Surco (previa coordinación)</li>
+                </ul>
+                <p>© 2024 por STYLEHOME - Todos los derechos reservados</p>
+            </div>
+        </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

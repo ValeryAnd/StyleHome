@@ -51,70 +51,115 @@ header ul {
 #contact {
     padding-top: 75px;
 }
+
 #hero{
     width: 100%;
-    height: 800px;
     background-color: #EDEEF0;
-    display: flex;
-    flex-direction: column ;
-    justify-content: center;
-    
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center; 
 }
 
 #hero .hero-image{
-    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hero .hero-image img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #hero .hero-text{
-    position:absolute;
-    right: 0;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #hero .hero-text h1{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 #hero .hero-text p {
-    width: 50%;
     text-align: justify;
+    line-height: 40px;
+
 }
 
 form{
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
 }
 
 form label{
     display: block;
 }
 
-footer{
+form input{
+    width: 100%;
+}
+
+#footer{
     background-color: #EDEEF0;
     text-align: center;
+    display: grid;
+    grid-template-rows: 100px;   
+    justify-content: center;
+    align-items: center;
 }
 
-footer .footer-container{
-    padding: 30px;
+#footer .footer-nav {
+    margin-top: 100px;
 }
-footer ul{
+
+#footer .footer-nav .logo{
+    text-decoration: none;
+    font-weight: 500;
+}
+#footer .footer-nav ul{
     display: flex;
     text-align: center;
-    margin:20px;
 }
 
-footer ul li{
-    padding: 0 20px;
+#footer ul li{
+    padding: 0 30px;
     list-style: none;
 }
 
-footer ul li a{
+#footer ul li a{
     text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+#footer .footer-nav a:hover{
+    color: #7b9fbb;
+}
+
+#footer .footer-nav .logo:hover {
     color: black;
 }
 
-.footer-container .logo{
-    margin-top: 20px;
+#footer .footer-texts {
+    margin-top: 60px;
+}
+
+#footer .footer-texts ul .text-weight{
+    font-weight: 600;
+}
+
+#footer .footer-texts ul li{
+    padding: 10px 0;
+}
+
+#footer .footer-texts p {
+    margin: 30px 0px;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 #contact h2{
