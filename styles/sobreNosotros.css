@@ -150,7 +150,7 @@ header ul {
 }
 
 #fundadores .fundadores {
-    background-color: #7b9fbb;
+    background-color: #5d6972;
     width: 120%;
     height: 100%;
     display: flex;
@@ -174,12 +174,12 @@ header ul {
     color: white;
 }
 
-#nuestraHistoria{
-    width: 70%;
-    margin: 0 auto;
-    margin-top:150px;
-    display: flex;
-    flex-direction: row;
+#nuestraHistoria {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    margin: 150px auto;
 }
 
 #nuestraHistoria .contenedor-imagen img{
@@ -193,11 +193,7 @@ header ul {
     flex-direction: column;
     justify-content: center;
     line-height: 40px;
-    padding-left: 80px;
-}
-
-#nuestraHistoria .contenedor-imagen{
-    text-align: left;
+    padding-left: 50px;
 }
 
 #nuestraHistoria .contenedor-texto h3{

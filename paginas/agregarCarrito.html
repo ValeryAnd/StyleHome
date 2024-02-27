@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/agregarCarrito.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/f75b12fb93.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>STYLEHOME</title>
 </head>
@@ -38,56 +39,63 @@
     </header>
     <main>
         <section id="agregar">
-                <section id="hero">
-                    <div class="hero-image">
-                        <img src="../imagenes/suculenta.jpg" alt="Suculenta">
-                    </div>
-                    <div>
+            <div class="product-img ">
+                <div class="hero-image">
+                    <img src="../imagenes/suculenta.jpg" alt="Suculenta">
+                </div>
+                <div>
                         <img src="" alt="">
                         <img src="" alt="">
                         <img src="" alt="">
-                    </div>
-                </section>
+                </div>
+            </div>
+            <div class="product-text">
                 <h1>Nueva Coleccion</h1>
                 <h2>Suculenta</h2>
-                <div>
+                <div class="stars">
                     <span class="material-symbols-outlined">
                         star
                     </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
                 </div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ligula augue. Pellentesque eleifend lorem at purus finibus, eget ultrices tortor vestibulum. Nullam volutpat molestie turpis vel consectetur. Etiam imperdiet ligula vitae eleifend suscipit. Duis posuere suscipit rutrum.
                 </p>
                 <p>S/50.00</p>
                 <input type="number" max="10" min="0">
-                <button type="button" class="button-agregar">Agregar al carrito</button>
+                <div class="container-button">
+                    <button type="button" class="button-agregar">Agregar al carrito</button>
+                </div>    
             </div>
         </section>
         <section>
-             <div>
-                <h3>Descripción</h3>
+            <div class="container-op">
+                <div class="text-option ">
+                    <h3>Descripción</h3>
+                 </div>
+                 <div class="text-option text-weight">
+                    <h3>Cuidado de plantas</h3>
+                 </div>
+                 <div class="text-option text-weight">
+                    <h3>Calificación</h3>
+                 </div>
+            </div> 
+            <div class="text-descripcion">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ligula augue. Pellentesque eleifend lorem at purus finibus, eget ultrices tortor vestibulum. Nullam volutpat molestie turpis vel consectetur. Etiam imperdiet ligula vitae eleifend suscipit. Duis posuere suscipit rutrum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ligula augue. Pellentesque eleifend lorem at purus finibus, eget ultrices tortor vestibulum. Nullam volutpat molestie turpis vel consectetur. Etiam imperdiet ligula vitae eleifend suscipit. Duis posuere suscipit rutrum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ligula augue. Pellentesque eleifend lorem at purus finibus, eget ultrices tortor vestibulum. Nullam volutpat molestie turpis vel consectetur. Etiam imperdiet ligula vitae eleifend suscipit. Duis posuere suscipit rutrum.
                 </p>
-             </div>
-             <div>
-                <h3>Cuidado de plantas</h3>
-             </div>
-             <div>
-                <h3>Calificación</h3>
-             </div>
+            </div>
         </section>
         <section id="productos">
             <h4>Otros productos</h4>
@@ -119,25 +127,27 @@
         </section>
     </main>
     <footer>
-        <div class="footer-container">
-            <a href="" class="logo">STYLEHOME</a>
-            <ul>
-                <li><a href="#">Preguntas frecuentes</a></li>
-                <li><a href="#">Politicas de envio</a></li>
-                <li><a href="#">Politicas de envios y devoluciones</a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>Contactanos</li>
-                <li>Cel: 988 888 888</li>
-                <li>Correo: stylehome@gmail.com</li>
-                <li>Encuéntranos: Surco (previa coordinación)</li>
-            </ul>
-            <p>© 2024 por STYLEHOME - Todos los derechos reservados</p>
-        </div>
+        <section id="footer">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#" class="logo">STYLEHOME</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Politicas de envio</a></li>
+                    <li><a href="#">Politicas de envios y devoluciones</a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                    <li><a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fa-brands fa-square-facebook fa-2xl"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=es"><i class="fa-brands fa-square-twitter fa-2xl"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-texts">
+                <ul>
+                    <li class="text-weight">Contactanos</li>
+                    <li>Cel: 988 888 888</li>
+                    <li>Correo: stylehome@gmail.com</li>
+                    <li>Encuéntranos: Surco (previa coordinación)</li>
+                </ul>
+                <p>© 2024 por STYLEHOME - Todos los derechos reservados</p>
+            </div>
+        </section>
     </footer>
 </html>
