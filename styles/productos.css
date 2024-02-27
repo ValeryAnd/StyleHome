@@ -163,3 +163,19 @@ header ul {
     font-weight: 500;
     font-size: 16px;
 }
+
+@media only screen and (max-width: 600px) {
+    header .menu ul li {
+        padding: 15px 20px; 
+    }
+    
+    header .menu .logo,
+    footer .logo {
+        padding-right: 20px; 
+    }
+
+    #productos .container-productos {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+  
+}
