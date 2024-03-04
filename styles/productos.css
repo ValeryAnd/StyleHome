@@ -5,39 +5,34 @@
     font-family: 'Poppins', sans-serif;;
 }
 
-header{
+header .navbar{
     position: fixed;
     height: 75px;
     width: 100%;
     background-color: #EDEEF0;
-    margin-bottom: 100px;
 }
 
-header ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+header .navbar-padding{
+    padding: 0 250px;
 }
 
-.menu ul li {
+.navbar-collapse ul li {
     list-style: none;
-    padding: 15px 40px;
+    padding-left: 30px;
 }
 
-.menu ul li a {
+.navbar-collapse ul li a {
     text-decoration: none;
     color: black;
     font-weight: 500;
 }
 
-.menu ul li a:hover {
+.navbar-collapse ul li a:hover {
     color: #7b9fbb;
 }
 
-.menu .logo, footer .logo{
+.navbar-brand{
     font-size: 30px;
-    padding-right: 100px;
 }
 
 .menu .logo a:hover, footer .logo{
@@ -48,28 +43,28 @@ header ul {
     padding: 120px 0px;
 }
 
-#productos .productos-texts {
+.productos-texts {
     margin-left: 120px;
 }
 
-#productos .productos-texts h1{
+.productos-texts h1{
     font-size: 12px;
     font-weight: 400;
     padding: 20px 0px;
     transition: all 0.3s;
 }
 
-#productos .productos-texts h1:hover {
+.productos-texts h1:hover {
     color: #7b9fbb;
     cursor: pointer;
 }
 
-#productos .productos-texts h2{
+.productos-texts h2{
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-#productos .container-productos{
+.container-productos{
     width: 80%;
     margin: 0 auto;
     display: grid;
@@ -79,57 +74,39 @@ header ul {
     margin-top: 50px;  
 }
 
-#productos .container-productos .product {
+.container-productos .product {
     max-width: 80%;
     height: 100%;
     text-align: left;
 }
 
-#productos .container-productos .product img {
+.container-productos .product img {
     max-width: 100%;
     height: 80%; 
     object-fit: cover;
 }
 
-#productos .container-productos .product-img:hover{
+.container-productos .product-img:hover{
     cursor: pointer;
 }
 
-#productos .container-productos .product-texts{
+.container-productos .product-texts{
     padding: 20px 0px;
     font-size: 16px;
 }
 
-#productos .container-productos .product-texts p{
+.container-productos .product-texts p{
     padding: 10px 0px;
     font-size: 15px;
 }
 
 #footer{
+    margin-top: 100px;
     background-color: #EDEEF0;
     text-align: center;
     display: grid;
-    grid-template-rows: 100px;   
     justify-content: center;
     align-items: center;
-}
-
-#footer .footer-nav {
-    margin-top: 100px;
-}
-
-#footer .footer-nav .logo{
-    text-decoration: none;
-    font-weight: 500;
-}
-#footer .footer-nav ul{
-    display: flex;
-    text-align: center;
-}
-
-#footer ul li{
-    padding: 0 30px;
-    list-style: none;
 }
 
 #footer ul li a{
@@ -138,19 +115,38 @@ header ul {
     font-weight: 500;
 }
 
-#footer .footer-nav a:hover{
+.footer-nav {
+    padding-top: 40px;
+}
+
+.footer-nav ul{
+    display: flex;   
+}
+
+#footer ul li{
+    padding: 0 30px;
+    list-style: none;
+}
+
+.footer-nav .logo{
+    font-size: 32px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.footer-nav a:hover{
     color: #7b9fbb;
 }
 
-#footer .footer-nav .logo:hover {
+.footer-nav .logo:hover {
     color: black;
 }
 
-#footer .footer-texts {
-    margin-top: 60px;
+.footer-texts {
+    margin-top: 40px;
 }
 
-#footer .footer-texts ul .text-weight{
+ .footer-texts ul .text-weight{
     font-weight: 600;
 }
 
@@ -158,24 +154,46 @@ header ul {
     padding: 10px 0;
 }
 
-#footer .footer-texts p {
+.footer-texts p {
     margin: 30px 0px;
     font-weight: 500;
     font-size: 16px;
 }
 
 @media only screen and (max-width: 600px) {
-    header .menu ul li {
-        padding: 15px 20px; 
+    
+    header .navbar-padding{
+        padding: 10px;
     }
     
-    header .menu .logo,
-    footer .logo {
-        padding-right: 20px; 
+    .navbar-collapse ul li {
+        padding-left: unset;
+    }
+    
+    .navbar-collapse ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
     }
 
     #productos .container-productos {
         grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .productos-texts {
+        margin-left: 40px;
+    }
+
+    #footer .footer-nav ul{
+        flex-direction: column;
+    }
+
+    #footer .footer-texts {
+        margin-top: 20px;
+    }
+
+    #footer ul li{
+        padding: 10px 0;
     }
   
 }

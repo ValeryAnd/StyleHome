@@ -56,53 +56,53 @@ header ul {
     align-items: center; 
 }
 
-#hero .hero-image{
+.hero-image{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#hero .hero-image img{
+
+.hero-image img{
     max-width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#hero .hero-text{
+.hero-text{
     width: 80%;
     margin: 0 auto;
 }
 
-#hero .hero-text h1{
+.hero-text h1{
     font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-#hero .hero-text p {
+.hero-text p {
     margin-top: 30px;
     text-align: justify;
     line-height: 40px;
 }
 
-#hero .hero-text .hero-button {
+.hero-text .hero-button {
     margin-top: 30px;
     width: 200px;
     padding: 15px 55px;
     text-align: center;
     background-color: #848893;
     border-radius: 40px;
-
 }
 
-#hero .hero-text .hero-button a{
+.hero-text .hero-button a{
     text-decoration: none;
     color: white;
     font-weight: 500;
     transition: all 0.3s;
 }
 
-#hero .hero-text .hero-button:hover{
+.hero-text .hero-button:hover{
     cursor: pointer;
     background-color: #537792;
 }
@@ -115,29 +115,21 @@ header ul {
     gap: 100px;
 }
 
-#texts .container-texts {
+.container-texts {
     line-height: 35px;
 }
 
-#texts .container-texts h2{
+.container-texts h2{
     color: #4A525D;
     margin-bottom: 20px;
 }
 
-#texts .container-texts p{
+.container-texts p{
     text-align: justify;
 }
 
 #fundadores {
     margin: 90px 0;
-}
-
-#fundadores .container-fundadores {
-    width: 60%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto;
-    gap: 80px;
 }
 
 #fundadores h3{
@@ -149,7 +141,15 @@ header ul {
     color: #4A525D;
 }
 
-#fundadores .fundadores {
+.container-fundadores {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap: 80px;
+}
+
+.fundadores {
     background-color: #5d6972;
     width: 120%;
     height: 100%;
@@ -160,14 +160,14 @@ header ul {
     border-radius: 10px;
 }
 
-#fundadores .fundadores img{
+.fundadores img{
     width: 80%;
     height:70%;
     object-fit: cover;
     border-radius: 20px;
 }
 
-#fundadores .fundadores p{
+.fundadores p{
     padding: 10px 0;
     font-size: 18px;
     font-weight: 500;
@@ -182,13 +182,13 @@ header ul {
     margin: 150px auto;
 }
 
-#nuestraHistoria .contenedor-imagen img{
+.contenedor-imagen img{
     max-width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#nuestraHistoria .contenedor-texto{
+.contenedor-texto{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -196,7 +196,7 @@ header ul {
     padding-left: 50px;
 }
 
-#nuestraHistoria .contenedor-texto h3{
+.contenedor-texto h3{
     font-size: 32px;
     color: black;
     font-weight: 600;
@@ -204,30 +204,12 @@ header ul {
 }
 
 #footer{
+    margin-top: 100px;
     background-color: #EDEEF0;
     text-align: center;
     display: grid;
-    grid-template-rows: 100px;   
     justify-content: center;
     align-items: center;
-}
-
-#footer .footer-nav {
-    margin-top: 100px;
-}
-
-#footer .footer-nav .logo{
-    text-decoration: none;
-    font-weight: 500;
-}
-#footer .footer-nav ul{
-    display: flex;
-    text-align: center;
-}
-
-#footer ul li{
-    padding: 0 30px;
-    list-style: none;
 }
 
 #footer ul li a{
@@ -236,19 +218,38 @@ header ul {
     font-weight: 500;
 }
 
-#footer .footer-nav a:hover{
+.footer-nav {
+    padding-top: 40px;
+}
+
+.footer-nav ul{
+    display: flex;   
+}
+
+#footer ul li{
+    padding: 0 30px;
+    list-style: none;
+}
+
+.footer-nav .logo{
+    font-size: 32px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.footer-nav a:hover{
     color: #7b9fbb;
 }
 
-#footer .footer-nav .logo:hover {
+.footer-nav .logo:hover {
     color: black;
 }
 
-#footer .footer-texts {
-    margin-top: 60px;
+.footer-texts {
+    margin-top: 40px;
 }
 
-#footer .footer-texts ul .text-weight{
+ .footer-texts ul .text-weight{
     font-weight: 600;
 }
 
@@ -256,7 +257,7 @@ header ul {
     padding: 10px 0;
 }
 
-#footer .footer-texts p {
+.footer-texts p {
     margin: 30px 0px;
     font-weight: 500;
     font-size: 16px;

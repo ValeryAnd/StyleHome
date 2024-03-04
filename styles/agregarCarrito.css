@@ -57,24 +57,6 @@ header ul {
     margin: 0 auto;
 }
 
-#agregar .product-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#agregar .product-text h1 {
-    padding: 20px 0;
-}
-
-#agregar .product-text p{
-    line-height: 40px;
-}
-
-#agregar .product-text .stars, #agregar .product-text input{
-    margin: 20px 0;
-}
-
 #agregar h1{
     font-size: 14px;
     font-weight: 400; 
@@ -84,6 +66,24 @@ header ul {
     font-size: 36px;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.product-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-text h1 {
+    padding: 20px 0;
+}
+
+.product-text p{
+    line-height: 40px;
+}
+
+.product-text .stars, #agregar .product-text input{
+    margin: 20px 0;
 }
 
 .button-agregar{
@@ -108,13 +108,19 @@ header ul {
     margin: 100px 0;
 }
 
+#productos h4{
+    font-size: 32px;
+    color: #4A525D;
+    letter-spacing: 1.5px;
+}
+
 .product {
     text-align: center;
     margin-bottom: 20px;
     padding: 0px 20px;
 }
 
-#productos .container-productos{
+.container-productos{
     margin-top: 50px;
     display: flex;
     flex-direction: row;
@@ -147,41 +153,17 @@ header ul {
     height: 300px; 
 }
 
-#productos h4{
-    font-size: 32px;
-    color: #4A525D;
-    letter-spacing: 1.5px;
-}
-
-#productos .container-productos .product h3{
+.container-productos .product h3{
     padding: 20px 0;
 }
 
 #footer{
+    margin-top: 100px;
     background-color: #EDEEF0;
     text-align: center;
     display: grid;
-    grid-template-rows: 100px;   
     justify-content: center;
     align-items: center;
-}
-
-#footer .footer-nav {
-    margin-top: 100px;
-}
-
-#footer .footer-nav .logo{
-    text-decoration: none;
-    font-weight: 500;
-}
-#footer .footer-nav ul{
-    display: flex;
-    text-align: center;
-}
-
-#footer ul li{
-    padding: 0 30px;
-    list-style: none;
 }
 
 #footer ul li a{
@@ -190,19 +172,38 @@ header ul {
     font-weight: 500;
 }
 
-#footer .footer-nav a:hover{
+.footer-nav {
+    padding-top: 40px;
+}
+
+.footer-nav ul{
+    display: flex;   
+}
+
+#footer ul li{
+    padding: 0 30px;
+    list-style: none;
+}
+
+.footer-nav .logo{
+    font-size: 32px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.footer-nav a:hover{
     color: #7b9fbb;
 }
 
-#footer .footer-nav .logo:hover {
+.footer-nav .logo:hover {
     color: black;
 }
 
-#footer .footer-texts {
-    margin-top: 60px;
+.footer-texts {
+    margin-top: 40px;
 }
 
-#footer .footer-texts ul .text-weight{
+ .footer-texts ul .text-weight{
     font-weight: 600;
 }
 
@@ -210,7 +211,7 @@ header ul {
     padding: 10px 0;
 }
 
-#footer .footer-texts p {
+.footer-texts p {
     margin: 30px 0px;
     font-weight: 500;
     font-size: 16px;

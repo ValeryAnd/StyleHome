@@ -52,30 +52,31 @@ header ul {
     align-items: center; 
 }
 
-#hero .hero-image{
+.hero-image{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#hero .hero-image img{
+
+.hero-image img{
     max-width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#hero .hero-text{
+.hero-text{
     width: 80%;
     margin: 0 auto;
 }
 
-#hero .hero-text h1{
+.hero-text h1{
     font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-#hero .hero-text p {
+.hero-text p {
     margin-top: 30px;
     text-align: justify;
     line-height: 40px;
@@ -84,15 +85,6 @@ header ul {
 .suscribete {
     display: grid;
     place-items: center;
-}
-
-#contact .suscribete h2, #contact .informacion h3{
-    margin: 30px 0;
-    font-size: 32px;
-    font-weight: 600;
-    color: #4A525D;
-    letter-spacing: 1.5px;
-    text-align: center;
 }
 
 #contact form{
@@ -110,7 +102,16 @@ header ul {
     width: 100%;
 }
 
-#contact .button-contact{
+.suscribete h2, .informacion h3{
+    margin: 30px 0;
+    font-size: 32px;
+    font-weight: 600;
+    color: #4A525D;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.button-contact{
     margin: 30px 0px;
     padding: 18px 70px;
     border: none;
@@ -122,24 +123,24 @@ header ul {
     transition: all 0.3s;
 }
 
-#contact .button-contact:hover{
+.button-contact:hover{
     background-color: #93bbda;
 }
 
-#contact .informacion{
+.informacion{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#contact .informacion .container-informacion{
+.informacion .container-informacion{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#contact .container-informacion .container-text {
+.container-informacion .container-text {
     width: 80%;
     height: 100%;
     margin: 0px 30px;
@@ -149,39 +150,21 @@ header ul {
     text-align: center;
 }
 
-#contact .container-informacion .container-text h4{
+.container-informacion .container-text h4{
     font-size: 16px;
 }
 
-#contact .informacion .informacion-ubicacion {
+.informacion .informacion-ubicacion {
     margin: 40px 0px;
 }
 
 #footer{
+    margin-top: 100px;
     background-color: #EDEEF0;
     text-align: center;
     display: grid;
-    grid-template-rows: 100px;   
     justify-content: center;
     align-items: center;
-}
-
-#footer .footer-nav {
-    margin-top: 100px;
-}
-
-#footer .footer-nav .logo{
-    text-decoration: none;
-    font-weight: 500;
-}
-#footer .footer-nav ul{
-    display: flex;
-    text-align: center;
-}
-
-#footer ul li{
-    padding: 0 30px;
-    list-style: none;
 }
 
 #footer ul li a{
@@ -190,19 +173,38 @@ header ul {
     font-weight: 500;
 }
 
-#footer .footer-nav a:hover{
+.footer-nav {
+    padding-top: 40px;
+}
+
+.footer-nav ul{
+    display: flex;   
+}
+
+#footer ul li{
+    padding: 0 30px;
+    list-style: none;
+}
+
+.footer-nav .logo{
+    font-size: 32px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.footer-nav a:hover{
     color: #7b9fbb;
 }
 
-#footer .footer-nav .logo:hover {
+.footer-nav .logo:hover {
     color: black;
 }
 
-#footer .footer-texts {
-    margin-top: 60px;
+.footer-texts {
+    margin-top: 40px;
 }
 
-#footer .footer-texts ul .text-weight{
+ .footer-texts ul .text-weight{
     font-weight: 600;
 }
 
@@ -210,16 +212,9 @@ header ul {
     padding: 10px 0;
 }
 
-#footer .footer-texts p {
+.footer-texts p {
     margin: 30px 0px;
     font-weight: 500;
     font-size: 16px;
 }
-
-#contact h2{
-    font-size: 25px;
-    text-align: center;
-    padding: 20px 0px;
-}
-
 
