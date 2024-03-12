@@ -176,10 +176,14 @@ header .navbar-brand {
 .productos .product {
   text-align: center;
 }
-.productos .product img {
+.productos .product .product-img img {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease-out;
+}
+.productos .product .product-img img:hover {
+  transform: scale(1.2);
 }
 .productos .product h4 {
   font-size: 16px;
