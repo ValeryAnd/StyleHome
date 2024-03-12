@@ -1,0 +1,156 @@
+@mixin media-query-mobile{
+    @media (max-width: 430px){
+        @content;
+    }
+}
+
+@mixin flexbox($direccion, $jc, $ai){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+.contact{
+    .hero{
+        width: 100%;
+        background-color: #EDEEF0;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        align-items: center; 
+        .hero-image{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                max-width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .hero-text{
+            width: 80%;
+            margin: 0 auto;
+            h1{
+                font-size: 50px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            p {
+                margin-top: 30px;
+                text-align: justify;
+                line-height: 40px;
+            }
+        }
+    }
+    .suscribete {
+        display: grid;
+        place-items: center;
+        form{
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 50px;
+            label{
+                display: block;
+            }
+            input{
+                width: 100%;
+            }
+        }
+        h2{
+            margin: 30px 0;
+            font-size: 32px;
+            font-weight: 600;
+            color: #4A525D;
+            letter-spacing: 1.5px;
+            text-align: center;
+        }
+        .button-contact{
+            margin: 30px 0px;
+            padding: 18px 70px;
+            border: none;
+            background-color: #7b9fbb;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            transition: all 0.3s;
+            &:hover{
+                background-color: #93bbda;
+            }
+        }
+    }
+    .informacion{
+        @include flexbox(column,center ,center );
+        h3{
+            margin: 30px 0;
+            font-size: 32px;
+            font-weight: 600;
+            color: #4A525D;
+            letter-spacing: 1.5px;
+            text-align: center;
+        }
+        .container-informacion{
+
+            @include flexbox(row,center ,center );
+            .container-text {
+                margin: 0px 30px;
+                padding: 15px 45px;
+                border: 3px solid #9198A2;
+                border-radius: 30px;
+                text-align: center;
+            }
+            h4{
+                font-size: 16px;
+            }
+        }
+        .informacion-ubicacion {
+            margin: 50px 0px;
+        }
+    }
+}
+
+@include media-query-mobile{
+    .contact {
+        .hero {
+            grid-template-columns: 100%; 
+            align-items: center;
+            .hero-text{
+                width: 90%; 
+                text-align: center;
+                h1 {
+                    font-size: 45px; 
+                }
+            }
+            .hero-image{
+                order: 2;
+            }
+        }
+        .suscribete {
+            form{
+                width: 80%;
+                display: grid;
+                grid-template-columns: 100%;
+                gap: 20px;
+            }
+        }
+        .informacion{
+            .container-informacion{
+                @include flexbox(column,center ,center );
+                .container-text {
+                    margin: 15px;
+                    padding: 15px 45px;
+                    border: 3px solid #9198A2;
+                    border-radius: 30px;
+                    text-align: center;
+                }
+            }
+            .informacion-ubicacion {
+                width: 80%;
+            }
+        }
+    }
+    
+}

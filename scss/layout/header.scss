@@ -1,0 +1,62 @@
+// Mixin para media query mobile
+@mixin media-query-mobile {
+    @media screen and (max-width: 430px) {
+        @content;
+    }
+}
+
+header {
+    .navbar {
+        position: fixed;
+        height: 75px;
+        width: 100%;
+        background-color: #EDEEF0;
+        
+        @include media-query-mobile {
+            .navbar-padding {
+                padding: 10px;
+            }
+
+            .navbar-collapse {
+                ul {
+                    li {
+                        padding-left: unset;
+
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-padding {
+        padding: 0 250px;
+    }
+
+    .navbar-collapse {
+        ul {
+            li {
+                list-style: none;
+                padding-left: 30px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: #7b9fbb;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-brand {
+        font-size: 30px;
+    }
+}

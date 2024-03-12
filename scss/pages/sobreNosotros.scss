@@ -1,0 +1,199 @@
+@mixin media-query-mobile{
+    @media (max-width: 430px){
+        @content;
+    }
+}
+.about-us {
+    padding-top: 75px;
+    width: 100%;
+    background-color: #EDEEF0;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center; 
+    .hero-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            max-width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    } 
+    .hero-text{
+        width: 80%;
+        margin: 0 auto;
+        h1{
+            font-size: 60px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #848893;
+            margin-top: 50px;
+        }
+        p {
+            margin-top: 30px;
+            text-align: justify;
+            line-height: 40px;
+        }
+        .hero-button {
+            margin-top: 30px;
+            width: 200px;
+            padding: 15px 55px;
+            text-align: center;
+            background-color: #848893;
+            border-radius: 40px;
+            a{
+                text-decoration: none;
+                color: white;
+                font-weight: 500;
+                transition: all 0.3s;
+            }
+            &:hover{
+                cursor: pointer;
+                background-color: #7497b3;
+                box-shadow: 2px 3px 15px #7497b3;
+            }
+        }
+    }   
+}
+
+@include media-query-mobile{
+    .about-us {
+        grid-template-columns: 100%; 
+        align-items: center;
+        .hero-text{
+            width: 90%; 
+            text-align: center;
+            h1 {
+                font-size: 45px; 
+            }
+            .hero-button{
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+        }
+        .hero-image{
+            order: 2;
+        }
+    }
+}
+
+.texts {
+    width: 80%;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 100px;
+    .container-texts {
+        line-height: 35px;
+        h2{
+            color: #4A525D;
+            margin-bottom: 20px;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+}
+
+@include media-query-mobile{
+    .texts{
+        grid-template-columns: 100%;
+        gap:10px;
+    }
+}
+
+.fundadores {
+    margin: 50px 0;
+    h3{
+        text-align: center;
+        font-size: 32px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: #4A525D;
+    }
+    .container-fundadores {
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+        gap: 80px;
+        .fundadores {
+            background-color: #5d6972;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            img{
+                width: 80%;
+                height:70%;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+            p{
+                padding: 10px 0;
+                font-size: 18px;
+                font-weight: 500;
+                color: white;
+            }
+        }
+    }
+}
+
+@include media-query-mobile{
+    .fundadores{
+        margin: 10px 0;
+        .container-fundadores{
+            grid-template-columns: 100%;
+            gap: 10px;
+        }
+    }  
+}
+
+
+.nuestraHistoria {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    margin: 80px auto;
+    .contenedor-imagen img{
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .contenedor-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 40px;
+        padding-left: 50px;
+        h3{
+            font-size: 32px;
+            color: #4A525D;
+            font-weight: 600;
+            margin: 20px 0px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #4A525D;
+        }
+    }
+}
+
+@include media-query-mobile{
+    .nuestraHistoria{
+        grid-template-columns: 100%;
+        .contenedor-imagen{
+            order: 2;
+        }
+        .contenedor-texto{
+            padding-left: unset;
+            h3{
+                text-align: center;
+            }
+        }
+    }
+}
